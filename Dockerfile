@@ -7,8 +7,8 @@ RUN apt-get -y update && apt-get
 RUN  npm install -g pm2 nodemon
 
 # source
-RUN mkdir /www/app
-WORKDIR /www/app
+RUN mkdir /app
+WORKDIR /app
 
 RUN mkdir /root/.ssh \
     && echo "StrictHostKeyChecking no " > /root/.ssh/config
